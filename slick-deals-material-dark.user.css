@@ -1,3 +1,14 @@
+/* ==UserStyle==
+@name         Slick Deals - Material Dark
+@version      1.0.0.0
+@description  Dark theme for SD
+@author       Cosmetify
+@homepageURL  https://github.com/cosmetify/Slick-Deals-Material-Dark
+@supportURL   https://github.com/cosmetify/Slick-Deals-Material-Dark/issues
+@updateURL    https://github.com/cosmetify/Slick-Deals-Material-Dark/raw/main/slick-deals-material-dark.user.css
+@license      CC-BY-SA-4.0
+==/UserStyle== */
+
 body {
 	background: #282828;
 	color: white;
