@@ -87,7 +87,10 @@
 	.textinput::placeholder,
 	#autoSuggest .row,
 	.editDealAlert strong,
-	.editDealAlert .section .ratingSliderContainer .ui-slider-wrapper.horizontal .ui-slider-label-ticks {
+	.editDealAlert .section .ratingSliderContainer .ui-slider-wrapper.horizontal .ui-slider-label-ticks,
+    ul.featured-deals li a,
+    .all-categories a,
+    .blueprint .bp-c-primaryNavigationItem_popup .bp-c-menuListItem_content {
 		color: lightgray;
 	}
 	#dealTitle h1,
@@ -189,7 +192,8 @@
 	ul.popularCategories li,
 	.newsAndArticlesModule .dealTiles .gridBox,
 	.ocdaModule,
-	#fpMainContent .gridCategory ul.gridDeals .fpGridBox .fpItem .itemBottomRow .likes.hover {
+    .content-box,
+    .blueprint .bp-c-primaryNavigationItem_popup .bp-p-menuList {
 		background: #353535 !important;
 		color: lightgray;
 	}
@@ -230,7 +234,9 @@
 	ul.popularCategories strong,
 	.editDealAlert .optionBox,
 	.optionBoxExpanded,
-	.editDealAlert .section .ratingSliderContainer {
+	.editDealAlert .section .ratingSliderContainer,
+    ul.featured-deals li a .icon,
+    .blueprint .bp-c-primaryNavigationItem_popup .bp-c-menuListItem_content:hover{
 		background-color: #4d4d4d;
 		color: #c6c6c6;
 		background-image: none;
@@ -311,7 +317,8 @@
 	.ui-widget-content,
 	.editDealAlert .optionBox,
 	.optionBoxExpanded,
-	.topSelections {
+	.topSelections,
+    .blueprint .bp-p-slickdealsHeader_main .bp-c-popup:not(.bp-p-hamburgerMenu) {
 		border: none;
 	}
 	#dealStatsNew,
