@@ -88,9 +88,13 @@
 	#autoSuggest .row,
 	.editDealAlert strong,
 	.editDealAlert .section .ratingSliderContainer .ui-slider-wrapper.horizontal .ui-slider-label-ticks,
-    ul.featured-deals li a,
-    .all-categories a,
-    .blueprint .bp-c-primaryNavigationItem_popup .bp-c-menuListItem_content {
+	#pageContent section header p,
+	.dealPosterForm .textinput, .dealPosterForm .dealPosterForm,
+	ul.filters li > span a,
+	.dealPosterForm .formGroup.fileUploader,
+	#pageContent aside header p,
+	.dealPosterForm label,
+	#attachmentContainer .thumbnailBlock .primaryImageLabel {
 		color: lightgray;
 	}
 	#dealTitle h1,
@@ -117,7 +121,8 @@
 	.pageTitle,
 	.dealAlertSettings strong,
 	.box .searchDealAlerts .guide .headline,
-	.box .searchDealAlerts .guide .icon {
+	.box .searchDealAlerts .guide .icon,
+	#pageContent h1, #pageContent h3 {
 		color: white !important;
 	}
 	.newsAndArticlesModule .dealTiles .gridBox .articleContent .articleCopy .articleDateline,
@@ -192,8 +197,8 @@
 	ul.popularCategories li,
 	.newsAndArticlesModule .dealTiles .gridBox,
 	.ocdaModule,
-    .content-box,
-    .blueprint .bp-c-primaryNavigationItem_popup .bp-p-menuList {
+	#pageContent section,
+	#attachmentContainer .thumbnailPreview {
 		background: #353535 !important;
 		color: lightgray;
 	}
@@ -206,7 +211,13 @@
 	.dealAlertSettings,
 	.blueprint .bp-p-question,
 	.ui-widget-content,
-	.box .searchDealAlerts .guide {
+	.box .searchDealAlerts .guide,
+	.dealPosterForm .dealPosterForm, .dealPosterForm .pillBoxAutoComplete,
+	.pillBoxAutoComplete input,
+	.popupMenu,
+	.dealPosterForm .input-group-addon,
+	#pageContent aside,
+	#attachmentContainer .uploadPreview {
 		color: lightgray;
 		background-color: #4d4d4d;
 		border: none;
@@ -234,9 +245,7 @@
 	ul.popularCategories strong,
 	.editDealAlert .optionBox,
 	.optionBoxExpanded,
-	.editDealAlert .section .ratingSliderContainer,
-    ul.featured-deals li a .icon,
-    .blueprint .bp-c-primaryNavigationItem_popup .bp-c-menuListItem_content:hover{
+	.editDealAlert .section .ratingSliderContainer {
 		background-color: #4d4d4d;
 		color: #c6c6c6;
 		background-image: none;
@@ -248,13 +257,17 @@
 	.bestCoupons ul li.empty,
 	.catBox,
 	.tagBox,
-	.topSelections {
+	.topSelections,
+	.pillBox {
 		color: lightgray;
 		background-color: #666;
 		background-image: none;
 	}
 	.separator {
 		background-color: #161a1d;
+	}
+	.dealPosterForm .formGroup.background {
+		background-color: #4600008a;
 	}
 	.box,
 	.button,
@@ -318,7 +331,10 @@
 	.editDealAlert .optionBox,
 	.optionBoxExpanded,
 	.topSelections,
-    .blueprint .bp-p-slickdealsHeader_main .bp-c-popup:not(.bp-p-hamburgerMenu) {
+	#pageContent section,
+	#pageContent .dealPosterContainer,
+	.pillBox,
+	#attachmentContainer {
 		border: none;
 	}
 	#dealStatsNew,
@@ -424,10 +440,14 @@
 	.dealRCM img,
 	.moreDeals .deal img,
 	.cmsArticle .moreDeals .deal img,
-	.carouselSection .carousel img {
+	.carouselSection .carousel img,
+	#attachmentContainer .thumbnailBlock img {
 		border-radius: 5px;
 	}
 	.newsAndArticlesModule .dealTiles .gridBox .articleContent .articleImage {
 		border-radius: 5px 5px 0px 0px;
+	}
+	.dealPosterForm .input-group-addon {
+		box-shadow: none;
 	}
 }
