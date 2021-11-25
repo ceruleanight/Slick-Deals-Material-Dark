@@ -94,7 +94,19 @@
 	.dealPosterForm .formGroup.fileUploader,
 	#pageContent aside header p,
 	.dealPosterForm label,
-	#attachmentContainer .thumbnailBlock .primaryImageLabel {
+	#attachmentContainer .thumbnailBlock .primaryImageLabel,
+    #profileNav li a,
+    #profileNav li .icon,
+    .myStats .num a,
+    ul#sidebarNav > li a,
+    .tabs a, .tabs button,
+    .blueprint .bp-p-popularProducts .bp-c-collapsible_headerContent,
+    .blueprint .bp-p-popularProducts_content .bp-p-popularProducts_title, .blueprint .bp-p-popularProducts_content .bp-p-popularProducts_subtitle,
+    .blueprint .bp-c-primaryNavigationItem_popup .bp-c-menuListItem_content,
+    ul.featured-deals li a,
+    .all-categories a,
+    ul.dealTiles li.fpGridBox.dealAlertsForYou strong + button,
+    .blueprint button, .blueprint .bp-c-button {
 		color: lightgray;
 	}
 	#dealTitle h1,
@@ -122,7 +134,9 @@
 	.dealAlertSettings strong,
 	.box .searchDealAlerts .guide .headline,
 	.box .searchDealAlerts .guide .icon,
-	#pageContent h1, #pageContent h3 {
+	#pageContent h1, #pageContent h3,
+    .all-categories > .column > ul > li > a,
+    ul.dealTiles li.fpGridBox.dealAlertsForYou strong {
 		color: white !important;
 	}
 	.newsAndArticlesModule .dealTiles .gridBox .articleContent .articleCopy .articleDateline,
@@ -154,13 +168,16 @@
 	#sideColumn .au,
 	#sideColumn .abc,
 	#sideColumn .abc,
-	#sideColumn .adNarrow {
+	#sideColumn .adNarrow,
+    form.box hr, hr.gridSeparator {
 		display: none !important;
 		min-height: 0 !important;
 	}
 	.sideGridBox,
 	.sideGridBox h3,
-	.sortingHeader {
+	.sortingHeader,
+    .blueprint .bp-p-popularProducts .bp-c-collapsible_header,
+    .blueprint .bp-p-popularProducts {
 		color: lightgray;
 		background: #161a1d;
 		border-color: black;
@@ -168,12 +185,17 @@
 	.bestCoupons .mainContent,
 	.blueprint .bp-p-slickdealsHeaderSearch_input,
 	.blueprint .bp-p-slickdealsHeaderSearch .bp-c-button,
-	.ocdaModule .alertAdded {
+	.ocdaModule .alertAdded,
+    .blueprint .bp-c-primaryNavigationItem_popup .bp-c-menuListItem_content:hover,
+    ul.featured-deals li a .icon,
+    ul.dealTiles li.fpGridBox.dealAlertsForYou strong + button,
+    .blueprint button {
 		background-color: #444;
 	}
 	.blueprint .bp-p-slickdealsHeaderSearch .bp-c-button:hover,
 	.dealAlertHeader.paused,
-	.dealAlertHeader.deactivated {
+	.dealAlertHeader.deactivated,
+    .blueprint button:hover {
 		background-color: #555;
 	}
 	.box,
@@ -198,7 +220,10 @@
 	.newsAndArticlesModule .dealTiles .gridBox,
 	.ocdaModule,
 	#pageContent section,
-	#attachmentContainer .thumbnailPreview {
+	#attachmentContainer .thumbnailPreview,
+    .tabs li,
+    .blueprint .bp-p-popularProducts .bp-c-collapsible_content,
+    .content-box {
 		background: #353535 !important;
 		color: lightgray;
 	}
@@ -217,9 +242,10 @@
 	.popupMenu,
 	.dealPosterForm .input-group-addon,
 	#pageContent aside,
-	#attachmentContainer .uploadPreview {
+	#attachmentContainer .uploadPreview,
+    .tabs li.active {
 		color: lightgray;
-		background-color: #4d4d4d;
+		background-color: #4d4d4d !important;
 		border: none;
 	}
 	.button,
@@ -240,7 +266,6 @@
 	body.cke_editable,
 	.textinput,
 	#fpMainContent .gridCategory .grid .fpItem .itemBottomRow,
-	#fpMainContent .gridCategory .grid .fpItem .itemBottomRow .likes,
 	.topCoupons .getCode,
 	ul.popularCategories strong,
 	.editDealAlert .optionBox,
@@ -269,6 +294,9 @@
 	.dealPosterForm .formGroup.background {
 		background-color: #4600008a;
 	}
+    .tabs {
+        border-bottom: 2px solid #353535;
+    }
 	.box,
 	.button,
 	.commentBubble,
@@ -334,9 +362,24 @@
 	#pageContent section,
 	#pageContent .dealPosterContainer,
 	.pillBox,
-	#attachmentContainer {
+	#attachmentContainer,
+    .profileHeader,
+    .aboutMe .item,
+    .myStats .item,
+    ul#sidebarNav > li,
+    #profileContent,
+    #profileSidebar,
+    .activityItem,
+    .tabs li:first-of-type,
+    .tabs li,
+    .blueprint .bp-p-popularProducts .bp-c-collapsible_content,
+    .blueprint .bp-p-slickdealsHeader_main .bp-c-popup:not(.bp-p-hamburgerMenu),
+    .topCouponsRCM .floatLeft .block, .featCouponsDiscounts .floatLeft .block {
 		border: none;
 	}
+    .blueprint .bp-p-popularProducts {
+        border-top: 3px solid var(--popularProductsTopBorderColor);
+    }
 	#dealStatsNew,
 	#detailsTop .buyNowButton,
 	.boxSubHeading,
@@ -345,7 +388,8 @@
 	.giveRepPoints,
 	.boxSubHeading,
 	.bp-p-sidebarDeals_deal,
-	.sideGridBox .subBoxContent {
+	.sideGridBox .subBoxContent,
+    .blueprint .bp-p-popularProducts_item:not(:first-child) {
 		border-top: 1px solid #515151;
 	}
 	.hiddenPost > div,
@@ -374,9 +418,15 @@
 	#pageContent .personalizedWidget .titleContainer h2 {
 		color: #ececec;
 	}
+    .sideGridBox.featCouponsDiscounts {
+        padding: 0 !important;
+    }
 	.commentBubble {
 		margin: 0 0 15px;
 	}
+    .bp-p-sidebarDeals {
+        margin: 0;    
+    }
 	.dealPrice,
 	.blueprint .bp-p-dealCard_price,
 	#mainColumn #fpMainContent #featDealsAndCoupons .fpGridBox .fpItem .itemInfoLine .itemPrice,
@@ -384,9 +434,13 @@
 		color: #2b9e46;
 	}
 	.bp-c-secondaryNavigationBar,
-	#fpMainContent .blueprint.socialDealCard li.expiredDealTileOverrides .showExpiredDeals .expiredText {
+	#fpMainContent .blueprint.socialDealCard li.expiredDealTileOverrides .showExpiredDeals .expiredText,
+     .profileHeader {
 		background: #424242;
 	}
+    .bp-c-popup {
+        background-color: #333;    
+    }
 	.separator {
 		height: 0px !important;
 	}
@@ -441,13 +495,24 @@
 	.moreDeals .deal img,
 	.cmsArticle .moreDeals .deal img,
 	.carouselSection .carousel img,
-	#attachmentContainer .thumbnailBlock img {
+	#attachmentContainer .thumbnailBlock img,
+    .topCouponsRCM .floatLeft img, .featCouponsDiscounts .floatLeft img {
 		border-radius: 5px;
 	}
 	.newsAndArticlesModule .dealTiles .gridBox .articleContent .articleImage {
 		border-radius: 5px 5px 0px 0px;
 	}
-	.dealPosterForm .input-group-addon {
+	.dealPosterForm .input-group-addon,
+    .countdownBanner {
 		box-shadow: none;
 	}
+    .aboutMe .item {
+        height: 21px;
+    }
+    .sideGridBox .subBoxContent .redemptions {
+        background-color: unset;
+    }
+    .button, .button:hover, .button.hover {
+        text-shadow: none;
+    }
 }
