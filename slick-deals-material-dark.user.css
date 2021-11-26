@@ -89,24 +89,38 @@
 	.editDealAlert strong,
 	.editDealAlert .section .ratingSliderContainer .ui-slider-wrapper.horizontal .ui-slider-label-ticks,
 	#pageContent section header p,
-	.dealPosterForm .textinput, .dealPosterForm .dealPosterForm,
+	.dealPosterForm .textinput,
+	.dealPosterForm .dealPosterForm,
 	ul.filters li > span a,
 	.dealPosterForm .formGroup.fileUploader,
 	#pageContent aside header p,
 	.dealPosterForm label,
 	#attachmentContainer .thumbnailBlock .primaryImageLabel,
-    #profileNav li a,
-    #profileNav li .icon,
-    .myStats .num a,
-    ul#sidebarNav > li a,
-    .tabs a, .tabs button,
-    .blueprint .bp-p-popularProducts .bp-c-collapsible_headerContent,
-    .blueprint .bp-p-popularProducts_content .bp-p-popularProducts_title, .blueprint .bp-p-popularProducts_content .bp-p-popularProducts_subtitle,
-    .blueprint .bp-c-primaryNavigationItem_popup .bp-c-menuListItem_content,
-    ul.featured-deals li a,
-    .all-categories a,
-    ul.dealTiles li.fpGridBox.dealAlertsForYou strong + button,
-    .blueprint button, .blueprint .bp-c-button {
+	#profileNav li a,
+	#profileNav li .icon,
+	.myStats .num a,
+	ul#sidebarNav > li a,
+	.tabs a,
+	.tabs button,
+	.blueprint .bp-p-popularProducts .bp-c-collapsible_headerContent,
+	.blueprint .bp-p-popularProducts_content .bp-p-popularProducts_title,
+	.blueprint .bp-p-popularProducts_content .bp-p-popularProducts_subtitle,
+	.blueprint .bp-c-primaryNavigationItem_popup .bp-c-menuListItem_content,
+	ul.featured-deals li a,
+	.all-categories a,
+	ul.dealTiles li.fpGridBox.dealAlertsForYou strong + button,
+	.blueprint button,
+	.blueprint .bp-c-button,
+	.facetedNavToggle a,
+	.facetedNavToggle a .icon,
+	.activityCol .text,
+	.lastPostCol,
+	.resultRow .dealInfo,
+	.resultsHeader,
+	.dropdown .dropdown-menu li > a,
+	.dropdown-custom .dropdown-menu li label:not([for]),
+	.dropdown .dropdown-menu li label:not([for]),
+	.shoppingTools .section .desc {
 		color: lightgray;
 	}
 	#dealTitle h1,
@@ -134,9 +148,11 @@
 	.dealAlertSettings strong,
 	.box .searchDealAlerts .guide .headline,
 	.box .searchDealAlerts .guide .icon,
-	#pageContent h1, #pageContent h3,
-    .all-categories > .column > ul > li > a,
-    ul.dealTiles li.fpGridBox.dealAlertsForYou strong {
+	#pageContent h1,
+	#pageContent h3,
+	.all-categories > .column > ul > li > a,
+	ul.dealTiles li.fpGridBox.dealAlertsForYou strong,
+	#topInfo .numResults {
 		color: white !important;
 	}
 	.newsAndArticlesModule .dealTiles .gridBox .articleContent .articleCopy .articleDateline,
@@ -144,7 +160,7 @@
 	.ocdaModule .alertAdded {
 		color: #888;
 	}
-
+	
 	#fpMainContent .gridCategory ul.gridDeals .fpGridBox .fpItem .itemBottomRow.personalizedDeal {
 		background-color: #31393F !important;
 		color: lightgray !important;
@@ -169,15 +185,18 @@
 	#sideColumn .abc,
 	#sideColumn .abc,
 	#sideColumn .adNarrow,
-    form.box hr, hr.gridSeparator {
+	form.box hr,
+	hr.gridSeparator,
+	.ab,
+	.extensionSearchBanner {
 		display: none !important;
 		min-height: 0 !important;
 	}
 	.sideGridBox,
 	.sideGridBox h3,
 	.sortingHeader,
-    .blueprint .bp-p-popularProducts .bp-c-collapsible_header,
-    .blueprint .bp-p-popularProducts {
+	.blueprint .bp-p-popularProducts .bp-c-collapsible_header,
+	.blueprint .bp-p-popularProducts {
 		color: lightgray;
 		background: #161a1d;
 		border-color: black;
@@ -186,17 +205,30 @@
 	.blueprint .bp-p-slickdealsHeaderSearch_input,
 	.blueprint .bp-p-slickdealsHeaderSearch .bp-c-button,
 	.ocdaModule .alertAdded,
-    .blueprint .bp-c-primaryNavigationItem_popup .bp-c-menuListItem_content:hover,
-    ul.featured-deals li a .icon,
-    ul.dealTiles li.fpGridBox.dealAlertsForYou strong + button,
-    .blueprint button {
+	.blueprint .bp-c-primaryNavigationItem_popup .bp-c-menuListItem_content:hover,
+	ul.featured-deals li a .icon,
+	ul.dealTiles li.fpGridBox.dealAlertsForYou strong + button,
+	.blueprint button,
+	.commentReactionsOptions .button:hover {
 		background-color: #444;
 	}
 	.blueprint .bp-p-slickdealsHeaderSearch .bp-c-button:hover,
 	.dealAlertHeader.paused,
 	.dealAlertHeader.deactivated,
-    .blueprint button:hover {
+	.blueprint button:hover {
 		background-color: #555;
+	}
+	.resultsHeader select {
+		background: #333;
+		color: lightgray;
+		border: none;
+	}
+	.facetedNav .section select,
+	.facetedNav input[type="text"],
+	select {
+		background: #4d4d4d;
+		color: lightgray;
+		border: none;
 	}
 	.box,
 	.blueprint .bp-p-questionAndAnswer,
@@ -221,9 +253,12 @@
 	.ocdaModule,
 	#pageContent section,
 	#attachmentContainer .thumbnailPreview,
-    .tabs li,
-    .blueprint .bp-p-popularProducts .bp-c-collapsible_content,
-    .content-box {
+	.tabs li,
+	.blueprint .bp-p-popularProducts .bp-c-collapsible_content,
+	.content-box,
+	.resultTabs a,
+	.dropdown .dropdown-menu,
+	.shopDeals > ul > li {
 		background: #353535 !important;
 		color: lightgray;
 	}
@@ -237,13 +272,16 @@
 	.blueprint .bp-p-question,
 	.ui-widget-content,
 	.box .searchDealAlerts .guide,
-	.dealPosterForm .dealPosterForm, .dealPosterForm .pillBoxAutoComplete,
+	.dealPosterForm .dealPosterForm,
+	.dealPosterForm .pillBoxAutoComplete,
 	.pillBoxAutoComplete input,
 	.popupMenu,
 	.dealPosterForm .input-group-addon,
 	#pageContent aside,
 	#attachmentContainer .uploadPreview,
-    .tabs li.active {
+	.tabs li.active,
+	.dropdown-custom .dropdown-menu li label:not([for]),
+	.dropdown .dropdown-menu li label:not([for]) {
 		color: lightgray;
 		background-color: #4d4d4d !important;
 		border: none;
@@ -294,9 +332,9 @@
 	.dealPosterForm .formGroup.background {
 		background-color: #4600008a;
 	}
-    .tabs {
-        border-bottom: 2px solid #353535;
-    }
+	.tabs {
+		border-bottom: 2px solid #353535;
+	}
 	.box,
 	.button,
 	.commentBubble,
@@ -363,23 +401,33 @@
 	#pageContent .dealPosterContainer,
 	.pillBox,
 	#attachmentContainer,
-    .profileHeader,
-    .aboutMe .item,
-    .myStats .item,
-    ul#sidebarNav > li,
-    #profileContent,
-    #profileSidebar,
-    .activityItem,
-    .tabs li:first-of-type,
-    .tabs li,
-    .blueprint .bp-p-popularProducts .bp-c-collapsible_content,
-    .blueprint .bp-p-slickdealsHeader_main .bp-c-popup:not(.bp-p-hamburgerMenu),
-    .topCouponsRCM .floatLeft .block, .featCouponsDiscounts .floatLeft .block {
+	.profileHeader,
+	.aboutMe .item,
+	.myStats .item,
+	ul#sidebarNav > li,
+	#profileContent,
+	#profileSidebar,
+	.activityItem,
+	.tabs li:first-of-type,
+	.tabs li,
+	.blueprint .bp-p-popularProducts .bp-c-collapsible_content,
+	.blueprint .bp-p-slickdealsHeader_main .bp-c-popup:not(.bp-p-hamburgerMenu),
+	.topCouponsRCM .floatLeft .block,
+	.featCouponsDiscounts .floatLeft .block,
+	.commentReactionsOptions .button:hover,
+	a.noThumbnail,
+	.resultRow,
+	.facetedNav .section,
+	.searchFooter .left,
+	.resultTabs a,
+	.resultsHeader,
+	.resultsHeader select,
+	.dropdown .dropdown-menu {
 		border: none;
 	}
-    .blueprint .bp-p-popularProducts {
-        border-top: 3px solid var(--popularProductsTopBorderColor);
-    }
+	.blueprint .bp-p-popularProducts {
+		border-top: 3px solid var(--popularProductsTopBorderColor);
+	}
 	#dealStatsNew,
 	#detailsTop .buyNowButton,
 	.boxSubHeading,
@@ -389,7 +437,7 @@
 	.boxSubHeading,
 	.bp-p-sidebarDeals_deal,
 	.sideGridBox .subBoxContent,
-    .blueprint .bp-p-popularProducts_item:not(:first-child) {
+	.blueprint .bp-p-popularProducts_item:not(:first-child) {
 		border-top: 1px solid #515151;
 	}
 	.hiddenPost > div,
@@ -400,7 +448,7 @@
 	.blueprint .bp-p-comment {
 		border-bottom: 1px solid #515151;
 	}
-
+	
 	form.box hr,
 	hr.gridSeparator {
 		border-top: 1px solid #777;
@@ -418,15 +466,18 @@
 	#pageContent .personalizedWidget .titleContainer h2 {
 		color: #ececec;
 	}
-    .sideGridBox.featCouponsDiscounts {
-        padding: 0 !important;
-    }
+	.resultsHeader {
+		background-color: #222;
+	}
+	.sideGridBox.featCouponsDiscounts {
+		padding: 0 !important;
+	}
 	.commentBubble {
 		margin: 0 0 15px;
 	}
-    .bp-p-sidebarDeals {
-        margin: 0;    
-    }
+	.bp-p-sidebarDeals {
+		margin: 0;
+	}
 	.dealPrice,
 	.blueprint .bp-p-dealCard_price,
 	#mainColumn #fpMainContent #featDealsAndCoupons .fpGridBox .fpItem .itemInfoLine .itemPrice,
@@ -435,12 +486,12 @@
 	}
 	.bp-c-secondaryNavigationBar,
 	#fpMainContent .blueprint.socialDealCard li.expiredDealTileOverrides .showExpiredDeals .expiredText,
-     .profileHeader {
+	.profileHeader {
 		background: #424242;
 	}
-    .bp-c-popup {
-        background-color: #333;    
-    }
+	.bp-c-popup {
+		background-color: #333;
+	}
 	.separator {
 		height: 0px !important;
 	}
@@ -496,23 +547,35 @@
 	.cmsArticle .moreDeals .deal img,
 	.carouselSection .carousel img,
 	#attachmentContainer .thumbnailBlock img,
-    .topCouponsRCM .floatLeft img, .featCouponsDiscounts .floatLeft img {
+	.topCouponsRCM .floatLeft img,
+	.featCouponsDiscounts .floatLeft img,
+	.resultTabs a,
+	.dealImg img {
 		border-radius: 5px;
 	}
-	.newsAndArticlesModule .dealTiles .gridBox .articleContent .articleImage {
+	.newsAndArticlesModule .dealTiles .gridBox .articleContent .articleImage,
+	.resultsHeader {
 		border-radius: 5px 5px 0px 0px;
 	}
 	.dealPosterForm .input-group-addon,
-    .countdownBanner {
+	.countdownBanner {
 		box-shadow: none;
 	}
-    .aboutMe .item {
-        height: 21px;
-    }
-    .sideGridBox .subBoxContent .redemptions {
-        background-color: unset;
-    }
-    .button, .button:hover, .button.hover {
-        text-shadow: none;
-    }
+	.aboutMe .item {
+		height: 21px;
+	}
+	.sideGridBox .subBoxContent .redemptions {
+		background-color: unset;
+	}
+	.button,
+	.button:hover,
+	.button.hover {
+		text-shadow: none;
+	}
+	.facetedNavVisible .resultTabs {
+		margin-bottom: 10px;
+	}
+	.resultTabs a.active {
+		font-weight: bold;
+	}
 }
