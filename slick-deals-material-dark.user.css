@@ -120,7 +120,9 @@
 	.dropdown .dropdown-menu li > a,
 	.dropdown-custom .dropdown-menu li label:not([for]),
 	.dropdown .dropdown-menu li label:not([for]),
-	.shoppingTools .section .desc {
+	.shoppingTools .section .desc,
+	.blueprint .bp-c-menuListItem .bp-c-menuListItem_content,
+	.dropdown .dropdown-menu li label {
 		color: lightgray;
 	}
 	#dealTitle h1,
@@ -209,7 +211,8 @@
 	ul.featured-deals li a .icon,
 	ul.dealTiles li.fpGridBox.dealAlertsForYou strong + button,
 	.blueprint button,
-	.commentReactionsOptions .button:hover {
+	.commentReactionsOptions .button:hover,
+	.blueprint .bp-p-headerIconButton_popup .bp-c-menuListItem_content:hover {
 		background-color: #444;
 	}
 	.blueprint .bp-p-slickdealsHeaderSearch .bp-c-button:hover,
