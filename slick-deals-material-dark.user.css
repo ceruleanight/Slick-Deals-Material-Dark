@@ -122,7 +122,8 @@
 	.dropdown .dropdown-menu li label:not([for]),
 	.shoppingTools .section .desc,
 	.blueprint .bp-c-menuListItem .bp-c-menuListItem_content,
-	.dropdown .dropdown-menu li label {
+	.dropdown .dropdown-menu li label,
+	.blueprint .bp-p-frontpageTabs .bp-c-tabs_tabs .bp-c-tabs_tab.bp-u-autoplayable_indicator--active .bp-c-button--unstyled {
 		color: lightgray;
 	}
 	#dealTitle h1,
@@ -190,9 +191,13 @@
 	form.box hr,
 	hr.gridSeparator,
 	.ab,
-	.extensionSearchBanner {
+	.extensionSearchBanner,
+	.blueprint .bp-p-dealCardGrid .bp-p-frontpageTabs_standardAd{
 		display: none !important;
 		min-height: 0 !important;
+	}
+	.blueprint:not(.blueberry) .bp-p-frontpageTabs .bp-p-dealCardGrid {
+		grid-template-rows: repeat(0, minmax(var(--socialDealCardHeight), auto)) var(--standardAdHeight) repeat(3, minmax(var(--socialDealCardHeight), auto));
 	}
 	.sideGridBox,
 	.sideGridBox h3,
@@ -261,7 +266,9 @@
 	.content-box,
 	.resultTabs a,
 	.dropdown .dropdown-menu,
-	.shopDeals > ul > li {
+	.shopDeals > ul > li,
+	.blueprint .bp-p-frontpageTabs .bp-c-tabs_tabs,
+	.blueprint .bp-c-card {
 		background: #353535 !important;
 		color: lightgray;
 	}
@@ -425,7 +432,9 @@
 	.resultTabs a,
 	.resultsHeader,
 	.resultsHeader select,
-	.dropdown .dropdown-menu {
+	.dropdown .dropdown-menu,
+	.blueprint .bp-p-frontpageTabs .bp-c-tabs_tabs,
+	.blueprint .bp-p-frontpageTabs .bp-p-dealCard {
 		border: none;
 	}
 	.blueprint .bp-p-popularProducts {
