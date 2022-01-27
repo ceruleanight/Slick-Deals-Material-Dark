@@ -11,7 +11,9 @@
 ==/UserStyle== */
 
 @-moz-document domain("slickdeals.net") {
-	body, .bp-p-responsiveFrontpage {
+	body,
+	.bp-p-responsiveFrontpage,
+	#pageContent .dealPosterContainer {
 		background: #282828;
 		color: white;
 	}
@@ -123,7 +125,12 @@
 	.shoppingTools .section .desc,
 	.blueprint .bp-c-menuListItem .bp-c-menuListItem_content,
 	.dropdown .dropdown-menu li label,
-	.blueprint .bp-p-frontpageTabs .bp-c-tabs_tabs .bp-c-tabs_tab.bp-u-autoplayable_indicator--active .bp-c-button--unstyled {
+	.blueprint .bp-p-frontpageTabs .bp-c-tabs_tabs .bp-c-tabs_tab.bp-u-autoplayable_indicator--active .bp-c-button--unstyled,
+	.loginSignUp .inner .subHead,
+	.orSep span,
+	.loginSignUp .bottom .altAccess,
+	.loginSignUp input.infoField,
+	.formValidation.error {
 		color: lightgray;
 	}
 	#dealTitle h1,
@@ -155,15 +162,16 @@
 	#pageContent h3,
 	.all-categories > .column > ul > li > a,
 	ul.dealTiles li.fpGridBox.dealAlertsForYou strong,
-	#topInfo .numResults {
+	#topInfo .numResults,
+	.loginSignUp .inner .head {
 		color: white !important;
 	}
 	.newsAndArticlesModule .dealTiles .gridBox .articleContent .articleCopy .articleDateline,
 	.alertDescription,
-	.ocdaModule .alertAdded {
+	.ocdaModule .alertAdded,
+	.disclaimerText {
 		color: #888;
 	}
-	
 	#fpMainContent .gridCategory ul.gridDeals .fpGridBox .fpItem .itemBottomRow.personalizedDeal {
 		background-color: #31393F !important;
 		color: lightgray !important;
@@ -219,14 +227,21 @@
 	.blueprint button,
 	.commentReactionsOptions .button:hover,
 	.blueprint .bp-p-headerIconButton_popup .bp-c-menuListItem_content:hover,
-	.blueprint .bp-p-slickdealsHeaderSearch_input[type="text"]:focus {
+	.blueprint .bp-p-slickdealsHeaderSearch_input[type="text"]:focus,
+	.nonModal,
+	.loginSignUp .bottom,
+	.floatLabelGroup.floated label {
 		background-color: #444;
 	}
 	.blueprint .bp-p-slickdealsHeaderSearch .bp-c-button:hover,
 	.dealAlertHeader.paused,
 	.dealAlertHeader.deactivated,
-	.blueprint button:hover {
+	.blueprint button:hover,
+	.orSep span {
 		background-color: #555;
+	}
+	.orSep hr {
+		border-color: #555;
 	}
 	.resultsHeader select {
 		background: #333;
@@ -435,7 +450,9 @@
 	.resultsHeader select,
 	.dropdown .dropdown-menu,
 	.blueprint .bp-p-frontpageTabs .bp-c-tabs_tabs,
-	.blueprint .bp-p-frontpageTabs .bp-p-dealCard {
+	.blueprint .bp-p-frontpageTabs .bp-p-dealCard,
+	#pageContent aside,
+	.nonModal {
 		border: none;
 	}
 	.blueprint .bp-p-popularProducts {
@@ -461,7 +478,12 @@
 	.blueprint .bp-p-comment {
 		border-bottom: 1px solid #515151;
 	}
-	
+	.loginSignUp .inputContainer {
+		border-color: #555;
+	}
+	.loginSignUp .inputContainer:hover {
+		border-color: #666;
+	}
 	form.box hr,
 	hr.gridSeparator {
 		border-top: 1px solid #777;
@@ -599,5 +621,8 @@
 	}
 	.bp-p-responsiveFrontpage #pageContent #sideColumn {
 		margin: 0px auto 0;
+	}
+	.moreDeals .content {
+		padding: 0px;
 	}
 }
