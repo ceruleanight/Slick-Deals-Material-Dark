@@ -192,7 +192,8 @@
 	hr.gridSeparator,
 	.ab,
 	.extensionSearchBanner,
-	.blueprint .bp-p-dealCardGrid .bp-p-frontpageTabs_standardAd{
+	.blueprint .bp-p-dealCardGrid .bp-p-frontpageTabs_standardAd,
+	.bp-p-frontpageDealGrid_standardAd {
 		display: none !important;
 		min-height: 0 !important;
 	}
