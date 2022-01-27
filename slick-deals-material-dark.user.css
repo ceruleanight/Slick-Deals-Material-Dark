@@ -11,7 +11,7 @@
 ==/UserStyle== */
 
 @-moz-document domain("slickdeals.net") {
-	body {
+	body, .bp-p-responsiveFrontpage {
 		background: #282828;
 		color: white;
 	}
@@ -217,7 +217,8 @@
 	ul.dealTiles li.fpGridBox.dealAlertsForYou strong + button,
 	.blueprint button,
 	.commentReactionsOptions .button:hover,
-	.blueprint .bp-p-headerIconButton_popup .bp-c-menuListItem_content:hover {
+	.blueprint .bp-p-headerIconButton_popup .bp-c-menuListItem_content:hover,
+	.blueprint .bp-p-slickdealsHeaderSearch_input[type="text"]:focus {
 		background-color: #444;
 	}
 	.blueprint .bp-p-slickdealsHeaderSearch .bp-c-button:hover,
@@ -589,5 +590,14 @@
 	}
 	.resultTabs a.active {
 		font-weight: bold;
+	}
+	.bp-p-responsiveFrontpage .bp-p-slickdealsHeader {
+		max-height: 150px;
+	}
+	.blueprint .bp-p-frontpageTabs .bp-c-tabs_tabs {
+		margin: 0px 0px 16px 0px;
+	}
+	.bp-p-responsiveFrontpage #pageContent #sideColumn {
+		margin: 0px auto 0;
 	}
 }
