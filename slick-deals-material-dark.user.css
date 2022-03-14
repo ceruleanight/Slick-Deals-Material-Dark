@@ -130,7 +130,13 @@
 	.orSep span,
 	.loginSignUp .bottom .altAccess,
 	.loginSignUp input.infoField,
-	.formValidation.error {
+	.formValidation.error,
+	.bp-p-cashbackDealBanner_infoDescription,
+	.loyaltyOfferPromo,
+	.blueprint .bp-p-sidebarDeals_titleLink,
+	.blueprint .bp-p-sidebarDeals_votes,
+	.blueprint .bp-p-sidebarDeals_info,
+	.blueprint .bp-p-sidebarCoupons_couponTitle {
 		color: lightgray;
 	}
 	#dealTitle h1,
@@ -163,7 +169,8 @@
 	.all-categories > .column > ul > li > a,
 	ul.dealTiles li.fpGridBox.dealAlertsForYou strong,
 	#topInfo .numResults,
-	.loginSignUp .inner .head {
+	.loginSignUp .inner .head,
+	.blueprint .bp-p-sidebarDeals_sectionTitleLink {
 		color: white !important;
 	}
 	.newsAndArticlesModule .dealTiles .gridBox .articleContent .articleCopy .articleDateline,
@@ -201,7 +208,8 @@
 	.ab,
 	.extensionSearchBanner,
 	.blueprint .bp-p-dealCardGrid .bp-p-frontpageTabs_standardAd,
-	.bp-p-frontpageDealGrid_standardAd {
+	.bp-p-frontpageDealGrid_standardAd,
+	.extensionDealCardPromoLegacyContainer {
 		display: none !important;
 		min-height: 0 !important;
 	}
@@ -230,7 +238,10 @@
 	.blueprint .bp-p-slickdealsHeaderSearch_input[type="text"]:focus,
 	.nonModal,
 	.loginSignUp .bottom,
-	.floatLabelGroup.floated label {
+	.floatLabelGroup.floated label,
+	.dealPosterContainer > aside,
+	.blueprint .bp-p-sidebarDeals_sectionTitle,
+	.blueprint .bp-p-sidebarCoupons_sectionTitle {
 		background-color: #444;
 	}
 	.blueprint .bp-p-slickdealsHeaderSearch .bp-c-button:hover,
@@ -478,10 +489,16 @@
 	.blueprint .bp-p-comment {
 		border-bottom: 1px solid #515151;
 	}
+	.blueprint .bp-p-sidebarDeals_sectionTitle,
+	.blueprint .bp-p-sidebarCoupons_sectionTitle {
+		border-color: #444;
+	}
 	.loginSignUp .inputContainer {
 		border-color: #555;
 	}
-	.loginSignUp .inputContainer:hover {
+	.loginSignUp .inputContainer:hover,
+	.blueprint .bp-p-sidebarDeals_deal,
+	.blueprint .bp-p-sidebarCoupons_couponContainer {
 		border-color: #666;
 	}
 	form.box hr,
@@ -504,7 +521,8 @@
 	.resultsHeader {
 		background-color: #222;
 	}
-	.sideGridBox.featCouponsDiscounts {
+	.sideGridBox.featCouponsDiscounts,
+	.bp-p-responsiveFrontpage #pageContent #sideColumn {
 		padding: 0 !important;
 	}
 	.commentBubble {
@@ -613,7 +631,8 @@
 	.resultTabs a.active {
 		font-weight: bold;
 	}
-	.bp-p-responsiveFrontpage .bp-p-slickdealsHeader {
+	.bp-p-responsiveFrontpage .bp-p-slickdealsHeader,
+	.blueprint .bp-p-slickdealsHeader {
 		max-height: 150px;
 	}
 	.blueprint .bp-p-frontpageTabs .bp-c-tabs_tabs {
@@ -624,5 +643,11 @@
 	}
 	.moreDeals .content {
 		padding: 0px;
+	}
+	.bp-p-responsiveFrontpage #pageContent #sideColumn .stickyRightRailWrapper {
+		gap: 0;
+	}
+	.sideGridBox, .blueprint .bp-p-sidebarCoupons {
+		margin-bottom: 15px !important;
 	}
 }
